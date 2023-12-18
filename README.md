@@ -71,7 +71,8 @@ boton Eliminar
 Un inconveniente que tuve me percate en ultimo momento fue que no sabia como entragar la base de datos
 lo resolvi exportandola a un rachivo y agregarla junto al archivo junto al codigo fuente pero si acaso aca 
 paso la estructura de la base de dato:
-CREATE DATABASE  IF NOT EXISTS `listadetareas` 
+CREATE DATABASE  IF NOT EXISTS `listadetareas`; 
+
 CREATE TABLE `tareas` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) DEFAULT NULL,
@@ -80,5 +81,5 @@ CREATE TABLE `tareas` (
   `descripcion` varchar(200) DEFAULT NULL,
   `prioridad` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) 
+) ;
 
